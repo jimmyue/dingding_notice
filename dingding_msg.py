@@ -28,9 +28,9 @@ def send_msg(secret,Webhook,data):
 
 if __name__ == "__main__":
 	#修改标签
-	secret = 'SEC72a6aae6b199a6ee17912866bc347b5923aff5fab1364d7a05b60568f7465f6d'
+	secret = 'XXXX'
 	#修改Webhook地址
-	Webhook='https://oapi.dingtalk.com/robot/send?access_token=5bbd6405593bdebe6413ea1feeea2bee74207765cd470af43f6d61b35adae76d'
+	Webhook='https://oapi.dingtalk.com/robot/send?access_token=XXXX'
 	#修改消息数据
 	data={"msgtype": "text",
 		  "text": {"content":"静夜思-李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。"},
