@@ -32,7 +32,10 @@ if __name__ == "__main__":
 	#修改Webhook地址
 	Webhook='https://oapi.dingtalk.com/robot/send?access_token=5bbd6405593bdebe6413ea1feeea2bee74207765cd470af43f6d61b35adae76d'
 	#修改消息数据
-	data={"msgtype": "text","text": {"content":"静夜思-李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。"}}
+	data={"msgtype": "text",
+		  "text": {"content":"静夜思-李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。"},
+		  "at":{"atMobiles":["185XXXXXXXX"],"isAtAll"False}
+		  }
 	send_msg(secret,Webhook,data)
 
 
